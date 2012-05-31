@@ -1,5 +1,5 @@
 # perl-test
-# $Id: 04-string-mod.t 192 2006-01-04 07:57:15Z knok $
+# $Id: 04-string-mod.t 187 2005-07-29 05:55:40Z knok $
 
 use strict;
 use Test;

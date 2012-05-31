@@ -1,3 +1,37 @@
+2012-05-31  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm: Version 1.28.
+
+2012-03-15  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm (readMagicEntry): Removed deprecated code
+	  (defined(@array)) reported by wyant@cpan.org (#74252).
+
+2011-07-21  Yukio USUDA  <usu@namazu.org>
+
+	* MMagic.pm (checktype_byfilename): Fixed memory leak.
+
+2007-10-02  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm: Added 'regex' and 'search' support for magic entry,
+	  and fixed fatal error when unknown type in magic entry.
+	  (The patch made by Man Min Yan, thank you).
+
+2006-09-19  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm (readMagicLine): Added Hex representation support.
+	  (The patch made by Man Min Yan, thank you)
+
+2006-07-01  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm (checktype_container): Added container check.
+	  (Powerd by CodeFest 2006 Akihabara
+	   https://members.fsij.org/trac/codefestakihabara2006c)
+
+2006-06-26  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* Applied subclass patch, made by Michael Hendricks.
+
 2006-05-23  NOKUBI Takatsugu  <knok@daionet.gr.jp>
 
 	* MMagic.pm: Version 1.27.
