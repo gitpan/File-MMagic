@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               File-MMagic
-version:            1.28
+version:            1.29
 abstract:           Guess file type from contents
 author:
     - NOKUBI Takatsugu <knok@daionet.gr.jp>

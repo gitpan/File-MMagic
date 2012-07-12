@@ -1,3 +1,13 @@
+2012-07-12  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm (checktype_contents): Fix infinity loop bug.
+	Reported by NMOLDAV@cpan.org (#77836)
+	* Version 1.29.
+
+2012-06-29  NOKUBI Takatsugu  <knok@daionet.gr.jp>
+
+	* MMagic.pm: Add missing =back.
+
 2012-05-31  NOKUBI Takatsugu  <knok@daionet.gr.jp>
 
 	* MMagic.pm: Version 1.28.

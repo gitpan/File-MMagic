@@ -1,6 +1,6 @@
 # File::MMagic
 #
-# $Id: MMagic.pm 282 2012-05-31 07:36:36Z knok $
+# $Id: MMagic.pm 288 2012-07-12 00:42:19Z knok $
 #
 # This program is originated from file.kulp that is a production of The
 # Unix Reconstruction Projct.
@@ -197,6 +197,8 @@ Add a new magic entry in the object. The format is same as magic(5) file.
 
 =item $mm->checktype_contents
 
+=back
+
 =head1 COPYRIGHT
 
 This program is originated from file.kulp that is a production of The
@@ -340,7 +342,7 @@ BEGIN {
 	    t => "\t",
 	    f => "\f");
 
-$VERSION = "1.28";
+$VERSION = "1.29";
 $allowEightbit = 1;
 }
 
@@ -628,7 +630,7 @@ sub checktype_contents {
 
     return 'application/octet-stream' if (length($data) <= 0);
 
-    $mtype = checktype_contents($self, $data);
+    $mtype = checktype_container($self, $data);
     return $mtype unless $mtype eq "";
 
     $mtype = checktype_magic($self, $data);
