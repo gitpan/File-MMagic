@@ -1,6 +1,6 @@
 # File::MMagic
 #
-# $Id: MMagic.pm 288 2012-07-12 00:42:19Z knok $
+# $Id: MMagic.pm 290 2013-07-02 06:21:39Z knok $
 #
 # This program is originated from file.kulp that is a production of The
 # Unix Reconstruction Projct.
@@ -304,7 +304,6 @@ that derived from the Apache HTTP Server.
 
 use FileHandle;
 use strict;
-use Scalar::Util;
 
 use vars qw(
 %TEMPLATES %ESC $VERSION
@@ -342,7 +341,7 @@ BEGIN {
 	    t => "\t",
 	    f => "\f");
 
-$VERSION = "1.29";
+$VERSION = "1.30";
 $allowEightbit = 1;
 }
 
@@ -740,7 +739,6 @@ sub checktype_byfilename {
 
     $fname =~ s/^.*\///;
     for my $regex (keys %{$self->{FILEEXTS}}) {
-	Scalar::Util::weaken($self->{FILEEXTS});
 	if ($fname =~ /$regex/i) {
 	    if ((defined $type && $type !~ /;/) || (! defined $type)) {
 		$type = $self->{FILEEXTS}->{$regex}; # has no x-type param
